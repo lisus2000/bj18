@@ -1,4 +1,7 @@
-from djang.http import HttpResponse
-
+from django.http import HttpResponse
+from django.shortcuts import redirect
 def index(request):
-    return HttpResponse('ok'
+    return HttpResponse('ok')
+
+def login(request):
+    return redirect('/index')
